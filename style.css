@@ -1,3 +1,200 @@
-*{
-    box-sizing: border-box;
+body{
+    background:#c4a7e7; 
+    overflow: hidden;
+    margin: 0px;
+  } 
+  
+  .layout {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 200px 1fr 100px 100px;
+    grid-template-rows: 50px 1fr 1fr 50px; 
+    grid-template-areas:
+      "hd  hd nav nav"
+      "sd  main main rs"
+      "sd  main main rs"
+      "ft  ft ft ft"
+  }
+  
+  /*.layout2 {
+    height: 97vh;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      "hd  hd"
+      "sd  main"
+      "ft  ft"
+  }*/
+
+  .header { 
+    grid-area: hd;
+    padding-top: 30px;
+    overflow: hidden;
+    background: #ea9d34;
+  }
+  
+  .nav { 
+    grid-area: nav;
+    padding-top: 10px;
+    overflow: hidden;
+    background: #31748f;
+  }
+  
+  .nav a {
+    color:#907aa9
+    font-family:"Audiowide", sans-serif;
+    font-size: 20px;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    background-color: #ebbcba; 
+  }
+    
+  .nav a.active {
+    background-color:#f6c177;
+    color:#DB504A;
+  }
+  
+  .footer {
+    grid-area: ft;
+    background: #ea9d34;
+  }
+  
+  .main {
+    grid-area: main;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+    /* background: #6e8783; */
+  }
+  
+  .sidebar {
+    grid-area: sd;
+    overflow: auto;
+    background-color:#907aa9;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+  
+  .sidebar a {
+    color: #db504a;
+  }
+  
+  .sidebar a:hover {
+    background-color:#9ccfd8; 
+  }
+  
+  h1{color: #334259;
+    text-align: left; 
+    font-family:'Lobster', cursive;
+    font-weight: bolder;
+  }
+  
+  h2{color: #334259; 
+    font-family:'Permanent Marker', cursive;
+    font-weight: lighter;
+    padding-left: 5px;
+  }
+  
+  p {
+    color: #334259; 
+    border-style:hidden; 
+    font-family:'Akaya Kanadaka', cursive; 
+    font-size:larger;
+    padding: 5px;
+    font-weight: bolder;}
+  
+  li {
+    color: #edddd0; 
+    font-family: 'Permanent Marker', cursive;
+    font-size:large;
+    font-weight: lighter; 
+    padding-right: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+    background-color: #f6c177;
+    overflow: hidden;
 }
+
+
+.grid-container {
+    height: 97vh;
+    width: 99vw;
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto auto;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "sd sd main but main main"
+    "ft ft ft ft ft ft"
+}
+
+
+
+
+
+
+.header {
+    grid-area: hd;
+    padding-top: 10px; 
+    overflow: hidden;
+    background: #c4a7e7;
+    font: #f6c177;
+
+}
+
+.button {
+    grid-area: but;
+    overflow: hidden;
+    background: #eb6f92;
+    font: #f6c177;
+}
+
