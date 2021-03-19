@@ -6,21 +6,33 @@
 
 body,
 html {
-  background-color: #c4a7e7;
+  background-color:#907aa9;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+
+
+@media only screen and (min-width: 992px) { 
+  .info {min-height: 75vh;}
+  .sidebar {min-height: 84vh;}
+  .col-1 {width: 8.33%;} 
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}  
 
 a:link {
   text-decoration: none;
@@ -39,15 +51,14 @@ font-size: 25px;
   display: table;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 1px;
-}
+
 
 .nav {
   font-size: 30px;
   color:#3e8fb0;
-  text-align: center;
+  padding-top: 13px;
+  text-align: right;
+  padding-right: 8px;
  }
 
 a:visited {
@@ -70,13 +81,15 @@ a:active {
 
 .sidebar {
   background-color:#907aa9;
-  min-height: 89vh;
   color:#ea9d34
 }
-
+#sd {
+  background-color:#907aa9 ;
+}
 ul {
   font-size: 30px;
   font-weight: bolder;
+  text-align: center;
 }
 
 .save {
@@ -90,12 +103,15 @@ ul {
 .note {
   margin-right: 5px;
 }
-
+#main {
+  background-color: #c4a7e7;
+}
 .info {
   display: flex;
+  background-color: #c4a7e7;
   justify-content: center;
   align-items: center;
-  min-height: 75vh;
+
 }
 
 .Notes {
@@ -104,11 +120,13 @@ ul {
 }
 
 .openbtn {
-  font-size: 75px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .closebtn {
-  font-size: 75px;
+  font-size: 50px;
+  text-align: center;
 }
 
 p {
