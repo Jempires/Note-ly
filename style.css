@@ -3,11 +3,11 @@
   margin:0;
   padding:0;
 }
+
 body,
 html {
   background-color: #c4a7e7;
 }
-
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -22,8 +22,6 @@ html {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
-
 a:link {
   text-decoration: none;
   color:#286983
@@ -33,7 +31,6 @@ a:link {
 background-color: #907aa9;
 color:#d7827e;
 font-size: 25px;
-
 }
 
 .row::after {
@@ -47,23 +44,20 @@ font-size: 25px;
   padding: 1px;
 }
 
-
 .nav {
   font-size: 30px;
   color:#3e8fb0;
   text-align: center;
  }
- /* visited link */
+
 a:visited {
   color:#ea9d34;
 }
 
-/* mouse over link */
 a:hover {
   color:#286983;
 }
 
-/* selected link */
 a:active {
   background-color: coral;
   color: yellow;
@@ -84,6 +78,7 @@ ul {
   font-size: 30px;
   font-weight: bolder;
 }
+
 .save {
   font-size: 80px;
 }
@@ -108,21 +103,15 @@ ul {
   font-size: 100px;
 }
 
-.list {
-  color:blue;
-}
-
 .openbtn {
   font-size: 75px;
-
 }
 
 .closebtn {
   font-size: 75px;
-  
 }
 
-p{
+p {
   font-family: 'Cookie', cursive;
   font-size: 50px;
   padding-bottom: 10px;
