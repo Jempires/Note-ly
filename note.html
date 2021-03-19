@@ -12,32 +12,57 @@
     <title>Note-ly</title>
 </head>
 <body>
+
+
+    
     <div class="header">
         <h1>Note-ly</h1>
-      </div>
-      <div class="nav">    
-        <a href="./index.html">About</a>
-        <a class="active" href="./note.html">Docs</a>
+    </div>
+    
+        <div class="row">
+        <div class="col-10"></div>
+        <div class="col-2">
+        <div class="nav">    
+            <a href="./index.html">About</a>
+            <a class="active" href="./note.html">Docs</a>
+        </div>
+        </div>
     </div>
 
-      <div class="col-3">
-          <div class="sidebar"
+
+     <!--<div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#128193</a>-->
+
+   <div class="col-1">
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> Close &#128193</a>
         <ul>
-          <li>Note 1</li>
-          <li>Note 2</li>
-          <li>Note 3</li>
-          <li>Note 4</li>
+          <li><a href="#">Note 1</a></li>
+          <li> <a href="#">Note 2</a></li>
+          <li> <a href="#">Note 3</a></li>
+          <li> <a href="#">Note 4</a></li>
         </ul>
-      </div>
+        </div>
+    </div>
 
+        
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+                <button class="Notes" 
+                type="button">&#128221
+                </button>
+        </div>
+        </div>
 
-
-        <div class="col-9">
-            <label for="notes">Create a New Note:</label>
-
-            <textarea id="notes" name="notes"
-                rows="10" cols="33">
-            </textarea>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-9">
+                <div class="text">
+                <textarea id="notes" name="notes"
+                rows="23" cols="56">
+                </textarea>
+            </div>
         </div>
             <!--<ul label="Links">
                 <li><a href=></a></li>
