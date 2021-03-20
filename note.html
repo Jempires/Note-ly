@@ -3,9 +3,11 @@
 <HTML lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Note-ly/style.css">
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note-ly</title>
 </head>
@@ -16,8 +18,8 @@
             <h1>Note-ly</h1>
         </div>
         <div class="col-2 nav">   
-                <a class="active" href="./index.html">About</a>
-                <a href="./note.html">Docs</a>
+            <a href="./index.html">About</a>
+            <a class="active" href="./note.html">Docs</a>
         </div>
     </div>
 
@@ -25,40 +27,38 @@
         <div class="col-1" id="sd">
             <div class="sidebar">
                 <P>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#128193</a>
+                <a href="javascript:void(0)" 
+                class="closebtn" 
+                onclick="closeNav()">&#128194</a>
                 </P>
                 <ul>
-                    <li><a href="">Note 1</a></li>
-                    <li><a href="">Note 2</a></li>
-                    <li><a href="">Note 3</a></li>
-                    <li><a href="">Note 4</a></li>
+                    <li><a href="#">Note 1</a></li>
+                    <li><a href="#">Note 2</a></li>
+                    <li><a href="#">Note 3</a></li>
+                    <li><a href="#">Note 4</a></li>
                 </ul>
             </div>
         </div> 
-        <div class="col-1 info"></div>
-        <div class="col-1 info">
+        <div class="col-3 info">
             <button class="Notes"
             type="button">&#128221
             </button>
         </div>
-        <div class="col-1 info"></div>
         <div class="col-5 info">
-            <div class="text">
-                <textarea name="textarea"
-                rows="25" cols="60"
-                placeholder="Write a new note."></textarea>
-            </div>
+            <textarea id="t" name="textarea"
+            placeholder="Write a new note."></textarea>
         </div>
-        <!-- <div class="col-1 info"></div> -->
         <div class="col-3 info">
             <button class="save" 
             type="button">&#128190</button>
             <button class="delete" 
             type="button">&#128465</button>
         </div>
-        <!-- <div class="col-1 info"></div> -->
     </div>
-    <div class="footer"></div>  
+
+    <div class="footer">
+        <h3>Created by Jempire</h3>
+    </div> 
 </body>
 </HTML>
 
