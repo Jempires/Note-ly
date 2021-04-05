@@ -6,59 +6,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Note-ly/style.css">
+    <link rel="stylesheet" href="../Note-ly/CSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note-ly</title>
 </head>
 <body>
 
-    <div class="row header">
+    <header class="row">
         <div class="col-10">
             <h1>Note-ly</h1>
         </div>
-        <div class="col-2 nav">   
-            <a href="./index.html">About</a>
-            <a class="active" href="./note.html">Docs</a>
-        </div>
-    </div>
+        <nav class="col-2">   
+            <a alt="link to the about page." href="./index.html">About</a>
+            <a alt="link to current page docs." class="active" href="./note.html">Docs</a>
+        </nav>
+    </header>
 
     <div class="row" id="main">
-        <div class="col-1" id="sd">
+        <div class="col-2" id="sd">
             <div class="sidebar">
                 <P>
-                <a href="javascript:void(0)" 
-                class="closebtn" 
-                onclick="closeNav()">&#128194</a>
+                <a href="javascript:void(0)" alt="Button to close saved notes list."
+                class="closebtn" onclick="closeNav()">&#128194</a>
                 </P>
                 <ul>
-                    <li><a href="#">Note 1</a></li>
-                    <li><a href="#">Note 2</a></li>
-                    <li><a href="#">Note 3</a></li>
-                    <li><a href="#">Note 4</a></li>
+                    <li><a alt="link to open saved note 1." href="#">Note 1</a></li>
+                    <li><a alt="link to open saved note 2." href="#">Note 2</a></li>
+                    <li><a alt="link to open saved note 3." href="#">Note 3</a></li>
+                    <li><a alt="link to open saved note 4." href="#">Note 4</a></li>
                 </ul>
             </div>
         </div> 
-        <div class="col-3 info">
-            <button class="Notes"
+        <div class="col-2 info">
+            <button alt="Button to create a new note."
+            class="Notes"
             type="button">&#128221
             </button>
         </div>
-        <div class="col-5 info">
+        <div class="col-6 info">
             <textarea id="t" name="textarea"
             placeholder="Write a new note."></textarea>
         </div>
-        <div class="col-3 info">
-            <button class="save" 
+        <div class="col-2 info">
+            <button alt="Button to save a note."
+            class="save" 
             type="button">&#128190</button>
-            <button class="delete" 
+            <button alt="Button to delete a note."
+            class="delete" 
             type="button">&#128465</button>
         </div>
     </div>
 
-    <div class="footer">
+    <footer>
         <h3>Created by Jempire</h3>
-    </div> 
+    </footer> 
 </body>
 </HTML>
 
