@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <HTML lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Note-ly/CSS/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./JS/app.js"></script>
     <title>Note-ly</title>
 </head>
 <body>
@@ -36,23 +37,25 @@
         </div> 
 
         <div class="col-2"></div>
-        <div class="col-6 info">
-            <div class="text">
+        <div class="col-6" id="maincolumn">
+            <div id="holdertext">
                 <p>Jot a Note..</p>
                 <p>..Tell a Story...</p>
                 <p>...Type a Letter..</p>
                 <p>...Scribble an Idea..</p>
                 <p>..Clear your Mind...</p>
                 <p>..Click to Create!!!</p>
-                <p>
-                <button alt="Button to create a new note."
-                class="Notes"
-                onclick="opentextarea()"> &#128221
-                </button> 
-                </p>
             </div>
+            <button id="opentextareabtn">&#128221</button> 
         </div>
-        <div class="col-2"></div>
+        <div class="col-2" id="rightcolumn">
+            <button alt="Button to save a note."
+            id="savebtn" 
+            type="button">&#128190</button>
+            <button alt="Button to delete a note."
+            id="delbtn"
+            type="button">&#128465</button>
+        </div>
     </div>
     <footer>
         <h3>Created by Jempire</h3>
