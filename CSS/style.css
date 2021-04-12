@@ -9,17 +9,11 @@ body, html {
   font-family: 'Berkshire Swash', cursive;
 }
 
-[class*="col-"] {
-  width: 100%;
-  float: left;
-  padding: 15px;
-}
-
-
 header {
-  background-color: #26233a;
   color:#c4a7e7;
   font-size: 25px;
+  padding: 15px;
+  text-align: center;
 }
 
 footer {
@@ -27,19 +21,12 @@ footer {
   padding-bottom: 10px;
   text-align: center;
   color:#c4a7e7;
-  background-color: #26233a;
   padding: 15px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 nav {
   font-size: 35px;
-  color:#26233a;
+  color:#3e8fb0;
   padding-top: 25px;
   text-align: right;
   padding-right: 8px;
@@ -47,32 +34,23 @@ nav {
 
 a:link {
   text-decoration: none;
-  color:#26233a;
-}
-
-a:visited {
-  color:#26233a;
-}
-
-a:hover {
-  color: #c4a7e7;
-}
-
-.active {
-  background-color#26233a;
-  padding-left: 10px;
-  padding-right: 10px;
-  color:#26233a;
-} 
-
-.sidebar {
-  background-color:#26233a;
   color:#c4a7e7;
 }
 
-#sd {
-  background-color:#26233a ;
+a:visited {
+  color:#c4a7e7;
 }
+
+a:hover {
+  color:#c4a7e7;
+}
+
+.active {
+  background-color:#26233a;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#c4a7e7;
+} 
 
 ul {
   font-size: 33px;
@@ -81,34 +59,70 @@ ul {
   list-style-type:none;
 }
 
+#themebtn {
+  font-size: 30px;
+  background-color: inherit;
+  border: 0px;
+}
+
 #savebtn {
   font-size: 50px;
   visibility: hidden;
+  background-color: inherit;
+  border: 0px;
 }
 
 #delbtn {
   font-size: 50px;
   visibility: hidden;
+  background-color: inherit;
+  border: 0px;
 }
 
 .note {
   margin-right: 5px;
 }
 
-#main {
-  background-color: #c4a7e7;
+#mainrow {
+  background-color: #26233a;
+}
+
+#sidebarcolumn {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 60px;
+  text-align: center;
+  background-color:#26233a;
+  color:#c4a7e7;
+}
+
+#leftcolumn {
+  grid-column: 2;
+  grid-row: 2;
+  background-color:#c4a7e7;
 }
 
 #maincolumn {
+  grid-column: 3;
+  grid-row: 2;
   display: flex;
   flex-direction: column;
   background-color: #c4a7e7;
+  color:#26233a;
   justify-content: center;
   align-items: center;
   visibility: visible;
 }
 
+.textarea1 {
+  width: 100%;
+  height: 400px;
+  visibility: visible;
+}
+
 #rightcolumn {
+  grid-column: 4;
+  grid-row: 2;
   display: flex;
   flex-direction: row;
   background-color: #c4a7e7;
@@ -120,51 +134,35 @@ ul {
 #opentextareabtn {
   text-align:center;
   font-size: 60px;
+  background-color: inherit;
+  border: 0px;
 }
 
-.openbtn {
-  font-size: 60px;
-  text-align: center;
+#openclosebtn {
+  background-color: inherit;
+  border: 0px;
+  font-size: 50px;
 }
 
-.closebtn {
-  font-size: 60px;
-  text-align: center;
-}
-
-p {
+#holdertext {
   font-family: 'Cookie', cursive;
   font-size: 50px;
   padding-bottom: 10px;
   text-align: center;
-  color:#26233a;
-}
-
-.t {
-  width:100%;
-  height:400px;
-  visibility: visible;
 }
 
 @media only screen and (min-width: 680px) { 
-  #maincolumn {min-height: 78vh;}
-  #rightcolumn {min-height: 78vh;}
-  .sidebar {min-height: 78vh;}
-  .openbtn {font-size: 75px;}
-  .closebtn {font-size: 75px;}
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 0px 600px;
+    grid-gap: 0px;
+  }
+  header {text-align: left;}
+  header > h1 {display: inline-flex;}
+  #themebtn {font-size: 50px; text-align: right;}
+  #openclosebtn {font-size: 75px;}
   #savebtn {font-size: 80px;}
   #delbtn {font-size: 80px;}
   #opentextareabtn {font-size: 85px;}
-  .col-1 {width: 8.33%;} 
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
 }
